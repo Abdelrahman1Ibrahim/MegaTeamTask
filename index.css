@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --mainColor: #6b6464;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Start card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  position: relative;
+  max-width: 300px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+@media(max-width:425px){
+    .card{
+        width: 90%;
+    }
+}
+.card .imge img {
+  width: 100%;
+}
+.card .head .icons i {
+  color: rgb(201, 158, 16);
+  font-size: 14px;
+}
+.card .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .head span {
+  color: var(--mainColor);
+  font-weight: 500;
+  font-size: 14px;
+}
+.card .head .save {
+  background-color: #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card .head .save i {
+  color: var(--mainColor);
+}
+h1 {
+  font-size: 16px;
+}
+.card .lessons {
+  margin-block: 20px;
+}
+.card .lessons span {
+  background-color: #ddd;
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+  color: var(--mainColor);
+}
+.card .std {
+  position: relative;
+  left: -5px;
+  border-left: 1px solid #eee;
+}
+.card .lessons i {
+  color: #8d8b8b;
+  margin-right: 10px;
+}
+.card .Explain {
+  color: var(--mainColor);
+  font-size: 14px;
+  max-width: 90%;
+}
+.card .name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-block: 15px;
+}
+.card .name span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.card .name p span:nth-child(1) {
+  color: var(--mainColor);
+}
+.card .name p span:last-child {
+  color: black;
+}
+.card .name img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card .last {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.card .last .del {
+  color: var(--mainColor);
+  font-weight: 500;
+  text-decoration-line: line-through;
+  -moz-text-decoration-line: line-through;
+  margin-right: 10px;
+}
+.card .correct {
+  color: rgb(117, 9, 9);
+  font-weight: bold;
+}
+.card .last .moredet {
+  font-size: 13px;
+  color: var(--mainColor);
+  cursor: pointer;
+}
